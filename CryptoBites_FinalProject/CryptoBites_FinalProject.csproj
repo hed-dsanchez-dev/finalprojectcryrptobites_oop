@@ -72,6 +72,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dinks.Designer.cs">
+      <DependentUpon>Dinks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foods.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinks.resx">
+      <DependentUpon>Dinks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Foods.resx">
       <DependentUpon>Foods.cs</DependentUpon>
     </EmbeddedResource>

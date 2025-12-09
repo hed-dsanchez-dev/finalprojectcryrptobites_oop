@@ -146,7 +146,7 @@ namespace CryptoBites_FinalProject
            "💻 Connect with us online for promotions and updates.\n\n" +
            "Thank you for choosing CryptoBites — where your cravings meet creativity!";
             MessageBox.Show(aboutText, "About CryptoBites", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            MessageBox.Show(aboutText, "About CryptoBites", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
         }
     }
 }

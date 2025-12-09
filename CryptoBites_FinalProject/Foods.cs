@@ -103,7 +103,110 @@ namespace CryptoBites_FinalProject
              "Thank you for choosing CryptoBites — where your cravings meet creativity!";
             MessageBox.Show(aboutText, "About CryptoBites", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            cart.Show();
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show($"User: {username}\nEnjoy CryptoBites! Enjoy your Meal",
+                          "Account Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnviewcart_Click(object sender, EventArgs e)
+        {
+            string summary = cart.GetCartSummary();
+
+            MessageBox.Show(summary,
+                            "Your Order",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
+
+        private void btnBurger_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownBurger.Value;
+            cart.AddItemToCart("Crypto Burger", 129.00m, qty);
+            numericUpDownBurger.Value = 0;
+        }
+
+        private void numericUpDownBurger_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownBurger.Value < 0)
+                numericUpDownBurger.Value = 0;
+        }
+
+        private void btnFries_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownFries.Value;
+            cart.AddItemToCart("Blockchain Fries", 89.00m, qty);
+            numericUpDownFries.Value = 0;
+        }
+
+        private void numericUpDownFries_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownFries.Value < 0)
+                numericUpDownFries.Value = 0;
+        }
+
+
+        private void btnChicken_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownChicken.Value;
+            cart.AddItemToCart("Satoshi Chicken", 149.00m, qty);
+            numericUpDownChicken.Value = 0;
+        }
+
+        private void numericUpDownChicken_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownChicken.Value < 0)
+                numericUpDownChicken.Value = 0;
+        }
+
+
+        private void btnpizza_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownpizza.Value;
+            cart.AddItemToCart("Crypto Pizza", 199.00m, qty);
+            numericUpDownpizza.Value = 0;
+        }
+
+        private void numericUpDownpizza_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownpizza.Value < 0)
+                numericUpDownpizza.Value = 0;
+        }
+
+        private void btnhotdog_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownhotdog.Value;
+            cart.AddItemToCart("Blockchain Hotdog", 79.00m, qty);
+            numericUpDownhotdog.Value = 0;
+        }
+
+        private void numericUpDownhotdog_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownhotdog.Value < 0)
+                numericUpDownhotdog.Value = 0;
+        }
+        private void btnpancit_Click(object sender, EventArgs e)
+        {
+            int qty = (int)numericUpDownpancit.Value;
+            cart.AddItemToCart("Crypto Pancit", 99.00m, qty);
+            numericUpDownpancit.Value = 0;
+        }
+
+        private void numericUpDownpancit_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownpancit.Value < 0)
+                numericUpDownpancit.Value = 0;
+        }
+
     }
-    }
+}
+
 
 

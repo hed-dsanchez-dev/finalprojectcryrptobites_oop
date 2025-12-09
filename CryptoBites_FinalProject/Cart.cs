@@ -18,23 +18,32 @@ namespace CryptoBites_FinalProject
             // Wire buttons (if not wired in Designer)
             this.btndrinks.Click += btndrinks_Click;
             this.btnfood.Click += btnfood_Click_1;
+            this.btncheck.Click += btncheck_Click; // add checkout button handler
         }
 
         private void Cart_Load(object sender, EventArgs e)
         {
             labelTotal.Text = "₱0.00";
+
+            numericUpDownadobo.Minimum = 0;
+            numericUpDownadobo.Maximum = 20;
+
+            numericUpDownsinigang.Minimum = 0;
+            numericUpDownsinigang.Maximum = 20;
+
+            numericUpDowndiniguan.Minimum = 0;
+            numericUpDowndiniguan.Maximum = 20;
         }
+
 
         // ---------------- Navigation Buttons ----------------
         private void btndrinks_Click(object sender, EventArgs e)
         {
-            // Open Drinks form and hide Cart
             Dinks drinksForm = new Dinks(this, currentUsername);
             drinksForm.Show();
             this.Hide();
         }
 
-      
         // ---------------- Add item to cart ----------------
         public void AddItemToCart(string itemName, decimal price, int quantity)
         {
@@ -68,38 +77,69 @@ namespace CryptoBites_FinalProject
         }
 
         // ---------------- Checkout ----------------
-        private void button5_Click(object sender, EventArgs e)
+        private void btncheck_Click(object sender, EventArgs e)
         {
+            // Check if cart is empty
             if (cartItems.Count == 0)
             {
-                MessageBox.Show("Your cart is empty!");
+                MessageBox.Show("Your cart is empty! Please add items before checking out.",
+                                "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // Determine selected payment method
             string paymentMethod = "";
-            if (radioButton1.Checked) paymentMethod = "Cash";
-            else if (radioButton2.Checked) paymentMethod = "GCash";
-            else if (radioButton3.Checked) paymentMethod = "Credit Card";
-            else
+            if (radioBtncash.Checked) paymentMethod = "Cash";
+            else if (radioBtngcash.Checked) paymentMethod = "GCash";
+            else if (radiobtncredit.Checked) paymentMethod = "Credit Card";
+
+            if (string.IsNullOrEmpty(paymentMethod))
             {
-                MessageBox.Show("Please select a payment method.");
+                MessageBox.Show("Please select a payment method.",
+                                "Select Payment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+
+            // Build order summary
+            string orderSummary = "";
+            for (int i = 0; i < cartItems.Count; i++)
+            {
+                orderSummary += $"{cartItems[i]} - ₱{cartPrices[i]:0.00}\n";
             }
 
             decimal total = CalculateTotal();
-            MessageBox.Show(
-                $"Thank you for ordering at CryptoBites!\n\nPayment Method: {paymentMethod}\nTotal Amount: ₱{total:0.00}\n\nYour order is now being prepared!",
-                "Order Complete",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
+
+            // Show confirmation dialog
+            DialogResult confirm = MessageBox.Show(
+                $"Your order:\n{orderSummary}\nTotal: ₱{total:0.00}\nPayment Method: {paymentMethod}\n\nDo you want to confirm your order?",
+                "Confirm Order",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
             );
 
-            cartItems.Clear();
-            cartPrices.Clear();
-            listBox1.Items.Clear();
-            UpdateTotal();
+            if (confirm == DialogResult.Yes)
+            {
+                MessageBox.Show(
+                    $"Thank you for your order!\n\nPayment Method: {paymentMethod}\nTotal Amount: ₱{total:0.00}\n\nYour order is now being prepared!",
+                    "Order Successful",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                // Clear cart
+                cartItems.Clear();
+                cartPrices.Clear();
+                listBox1.Items.Clear();
+                UpdateTotal();
+
+                // Reset payment method
+                radioBtncash.Checked = false;
+                radioBtngcash.Checked = false;
+                radiobtncredit.Checked = false;
+            }
         }
 
+        // ---------------- Helper Methods ----------------
         private void UpdateTotal()
         {
             decimal total = CalculateTotal();
@@ -112,7 +152,6 @@ namespace CryptoBites_FinalProject
             foreach (var price in cartPrices)
                 sum += price;
             return sum;
-
         }
 
         private void btnfood_Click_1(object sender, EventArgs e)
@@ -122,12 +161,11 @@ namespace CryptoBites_FinalProject
             this.Hide();
         }
 
-       
-            private void btnback_Click_1(object sender, EventArgs e)
+        private void btnback_Click_1(object sender, EventArgs e)
         {
-            Form1 loginForm = new Form1(); // create a new login form
-            loginForm.Show();               // show login form
-            this.Close();                   // close current Cart form
+            Form1 loginForm = new Form1();
+            loginForm.Show();
+            this.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -146,10 +184,59 @@ namespace CryptoBites_FinalProject
            "💻 Connect with us online for promotions and updates.\n\n" +
            "Thank you for choosing CryptoBites — where your cravings meet creativity!";
             MessageBox.Show(aboutText, "About CryptoBites", MessageBoxButtons.OK, MessageBoxIcon.Information);
-           
         }
+
+        // ---------------- Account Info ----------------
+        private void btnaccnt_Click(object sender, EventArgs e)
+        {
+            string username = this.currentUsername;
+            MessageBox.Show($"User: {username}\nEnjoy CryptoBites! Enjoy your Meal",
+                            "Account Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void radioBtncash_CheckedChanged(object sender, EventArgs e) { }
+        private void radioBtngcash_CheckedChanged(object sender, EventArgs e) { }
+        private void radiobtncredit_CheckedChanged(object sender, EventArgs e) { }
+
+       
+
+        private void btnAddAdobo_Click(object sender, EventArgs e)
+        {
+            int quantity = (int)numericUpDownadobo.Value;
+            AddItemToCart("Adobo", 120.00m, quantity);
+            numericUpDownadobo.Value = 0;
+        }
+
+
+        private void btnAddSinigang_Click(object sender, EventArgs e)
+        {
+            int quantity = (int)numericUpDownsinigang.Value;
+            AddItemToCart("Sinigang", 140.00m, quantity);
+            numericUpDownsinigang.Value = 0;
+        }
+
+
+        private void btnAddDinuguan_Click(object sender, EventArgs e)
+        {
+            int quantity = (int)numericUpDowndiniguan.Value;
+            AddItemToCart("Dinuguan", 130.00m, quantity);
+            numericUpDowndiniguan.Value = 0;
+        }
+        // ---------------- View Cart ----------------
+        public string GetCartSummary()
+        {
+            if (cartItems.Count == 0)
+                return "Your cart is empty.";
+
+            string summary = "";
+            for (int i = 0; i < cartItems.Count; i++)
+            {
+                summary += $"{cartItems[i]} - ₱{cartPrices[i]:0.00}\n";
+            }
+
+            summary += $"\nTotal: {labelTotal.Text}";
+            return summary;
+        }
+
     }
 }
-
-    
-

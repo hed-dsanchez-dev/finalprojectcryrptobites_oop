@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CryptoBites_FinalProject
@@ -68,17 +61,37 @@ namespace CryptoBites_FinalProject
 
         private void btnfood_Click(object sender, EventArgs e)
         {
-            Foods FoodsForm = new Foods(cart, username); // pass Cart and username
+            Foods FoodsForm = new Foods(cart, username);
             FoodsForm.Show();
             this.Hide();
         }
 
         private void btndrinks_Click(object sender, EventArgs e)
         {
-          Dinks drinksForm = new Dinks(cart, username); // pass Cart and username
-            drinksForm.Show();
-            this.Hide();
+            // Already in Dinks form, just show the info
             MessageBox.Show("Please select Drinks.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            cart.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"User: {username}\nEnjoy CryptoBites! Enjoy your Meal",
+                            "Account Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnview_Click(object sender, EventArgs e)
+        {
+            string summary = cart.GetCartSummary();
+
+            MessageBox.Show(summary,
+                            "Your Order",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
     }
 }

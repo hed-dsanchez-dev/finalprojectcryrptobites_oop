@@ -28,88 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDowndiniguan = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownsinigang = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownadobo = new System.Windows.Forms.NumericUpDown();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTotal = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button5 = new System.Windows.Forms.Button();
+            this.radiobtncredit = new System.Windows.Forms.RadioButton();
+            this.radioBtngcash = new System.Windows.Forms.RadioButton();
+            this.radioBtncash = new System.Windows.Forms.RadioButton();
+            this.btncheck = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnback = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnaccnt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.btnfood = new System.Windows.Forms.Button();
             this.btndrinks = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddAdobo = new System.Windows.Forms.Button();
+            this.btnAddSinigang = new System.Windows.Forms.Button();
+            this.btnAddDinuguan = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDowndiniguan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownsinigang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownadobo)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox5
+            // numericUpDowndiniguan
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(16, 608);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(249, 139);
-            this.pictureBox5.TabIndex = 34;
-            this.pictureBox5.TabStop = false;
+            this.numericUpDowndiniguan.Location = new System.Drawing.Point(289, 722);
+            this.numericUpDowndiniguan.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDowndiniguan.Name = "numericUpDowndiniguan";
+            this.numericUpDowndiniguan.Size = new System.Drawing.Size(303, 22);
+            this.numericUpDowndiniguan.TabIndex = 29;
             // 
-            // pictureBox4
+            // numericUpDownsinigang
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(16, 425);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(249, 139);
-            this.pictureBox4.TabIndex = 33;
-            this.pictureBox4.TabStop = false;
+            this.numericUpDownsinigang.Location = new System.Drawing.Point(289, 539);
+            this.numericUpDownsinigang.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownsinigang.Name = "numericUpDownsinigang";
+            this.numericUpDownsinigang.Size = new System.Drawing.Size(303, 22);
+            this.numericUpDownsinigang.TabIndex = 28;
             // 
-            // pictureBox2
+            // numericUpDownadobo
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(16, 242);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(249, 139);
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(289, 722);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(303, 22);
-            this.numericUpDown3.TabIndex = 29;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(289, 539);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(303, 22);
-            this.numericUpDown2.TabIndex = 28;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(289, 357);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(303, 22);
-            this.numericUpDown1.TabIndex = 27;
+            this.numericUpDownadobo.Location = new System.Drawing.Point(289, 357);
+            this.numericUpDownadobo.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownadobo.Name = "numericUpDownadobo";
+            this.numericUpDownadobo.Size = new System.Drawing.Size(303, 22);
+            this.numericUpDownadobo.TabIndex = 27;
             // 
             // panel3
             // 
@@ -117,10 +93,10 @@
             this.panel3.Controls.Add(this.labelTotal);
             this.panel3.Controls.Add(this.listBox1);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.radioButton3);
-            this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Controls.Add(this.radioButton1);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.radiobtncredit);
+            this.panel3.Controls.Add(this.radioBtngcash);
+            this.panel3.Controls.Add(this.radioBtncash);
+            this.panel3.Controls.Add(this.btncheck);
             this.panel3.Location = new System.Drawing.Point(967, 196);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
@@ -157,58 +133,62 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Your Orders:";
             // 
-            // radioButton3
+            // radiobtncredit
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(340, 596);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(95, 20);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Credit Card";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radiobtncredit.AutoSize = true;
+            this.radiobtncredit.Location = new System.Drawing.Point(340, 596);
+            this.radiobtncredit.Margin = new System.Windows.Forms.Padding(4);
+            this.radiobtncredit.Name = "radiobtncredit";
+            this.radiobtncredit.Size = new System.Drawing.Size(95, 20);
+            this.radiobtncredit.TabIndex = 3;
+            this.radiobtncredit.TabStop = true;
+            this.radiobtncredit.Text = "Credit Card";
+            this.radiobtncredit.UseVisualStyleBackColor = true;
+            this.radiobtncredit.CheckedChanged += new System.EventHandler(this.radiobtncredit_CheckedChanged);
             // 
-            // radioButton2
+            // radioBtngcash
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(340, 571);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 20);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Gcash";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioBtngcash.AutoSize = true;
+            this.radioBtngcash.Location = new System.Drawing.Point(340, 571);
+            this.radioBtngcash.Margin = new System.Windows.Forms.Padding(4);
+            this.radioBtngcash.Name = "radioBtngcash";
+            this.radioBtngcash.Size = new System.Drawing.Size(67, 20);
+            this.radioBtngcash.TabIndex = 2;
+            this.radioBtngcash.TabStop = true;
+            this.radioBtngcash.Text = "Gcash";
+            this.radioBtngcash.UseVisualStyleBackColor = true;
+            this.radioBtngcash.CheckedChanged += new System.EventHandler(this.radioBtngcash_CheckedChanged);
             // 
-            // radioButton1
+            // radioBtncash
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(340, 544);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 20);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Cash";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioBtncash.AutoSize = true;
+            this.radioBtncash.Location = new System.Drawing.Point(340, 544);
+            this.radioBtncash.Margin = new System.Windows.Forms.Padding(4);
+            this.radioBtncash.Name = "radioBtncash";
+            this.radioBtncash.Size = new System.Drawing.Size(59, 20);
+            this.radioBtncash.TabIndex = 1;
+            this.radioBtncash.TabStop = true;
+            this.radioBtncash.Text = "Cash";
+            this.radioBtncash.UseVisualStyleBackColor = true;
+            this.radioBtncash.CheckedChanged += new System.EventHandler(this.radioBtncash_CheckedChanged);
             // 
-            // button5
+            // btncheck
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(4, 544);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(328, 73);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "CHECK OUT";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btncheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncheck.Location = new System.Drawing.Point(4, 544);
+            this.btncheck.Margin = new System.Windows.Forms.Padding(4);
+            this.btncheck.Name = "btncheck";
+            this.btncheck.Size = new System.Drawing.Size(328, 73);
+            this.btncheck.TabIndex = 0;
+            this.btncheck.Text = "CHECK OUT";
+            this.btncheck.UseVisualStyleBackColor = true;
+            this.btncheck.Click += new System.EventHandler(this.btncheck_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.btnback);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnaccnt);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btnfood);
@@ -232,16 +212,17 @@
             this.btnback.UseVisualStyleBackColor = true;
             this.btnback.Click += new System.EventHandler(this.btnback_Click_1);
             // 
-            // button1
+            // btnaccnt
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(213, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "ACCOUNT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnaccnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaccnt.Location = new System.Drawing.Point(213, 160);
+            this.btnaccnt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnaccnt.Name = "btnaccnt";
+            this.btnaccnt.Size = new System.Drawing.Size(120, 28);
+            this.btnaccnt.TabIndex = 8;
+            this.btnaccnt.Text = "ACCOUNT";
+            this.btnaccnt.UseVisualStyleBackColor = true;
+            this.btnaccnt.Click += new System.EventHandler(this.btnaccnt_Click);
             // 
             // label1
             // 
@@ -297,33 +278,100 @@
             this.textBox1.Size = new System.Drawing.Size(365, 22);
             this.textBox1.TabIndex = 0;
             // 
+            // btnAddAdobo
+            // 
+            this.btnAddAdobo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAdobo.Location = new System.Drawing.Point(366, 318);
+            this.btnAddAdobo.Name = "btnAddAdobo";
+            this.btnAddAdobo.Size = new System.Drawing.Size(75, 32);
+            this.btnAddAdobo.TabIndex = 37;
+            this.btnAddAdobo.Text = "Adobo";
+            this.btnAddAdobo.UseVisualStyleBackColor = true;
+            this.btnAddAdobo.Click += new System.EventHandler(this.btnAddAdobo_Click);
+            // 
+            // btnAddSinigang
+            // 
+            this.btnAddSinigang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSinigang.Location = new System.Drawing.Point(366, 486);
+            this.btnAddSinigang.Name = "btnAddSinigang";
+            this.btnAddSinigang.Size = new System.Drawing.Size(96, 36);
+            this.btnAddSinigang.TabIndex = 38;
+            this.btnAddSinigang.Text = "Sinigang";
+            this.btnAddSinigang.UseVisualStyleBackColor = true;
+            this.btnAddSinigang.Click += new System.EventHandler(this.btnAddSinigang_Click);
+            // 
+            // btnAddDinuguan
+            // 
+            this.btnAddDinuguan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddDinuguan.Location = new System.Drawing.Point(369, 670);
+            this.btnAddDinuguan.Name = "btnAddDinuguan";
+            this.btnAddDinuguan.Size = new System.Drawing.Size(93, 45);
+            this.btnAddDinuguan.TabIndex = 39;
+            this.btnAddDinuguan.Text = "Dinuguan";
+            this.btnAddDinuguan.UseVisualStyleBackColor = true;
+            this.btnAddDinuguan.Click += new System.EventHandler(this.btnAddDinuguan_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(16, 608);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(249, 139);
+            this.pictureBox5.TabIndex = 34;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CryptoBites_FinalProject.Properties.Resources.Screenshot_2025_12_09_153134;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 401);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(249, 163);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 33;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CryptoBites_FinalProject.Properties.Resources.chicken_adobo_filipino_recipe;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 224);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(249, 155);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
             // Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1436, 864);
+            this.Controls.Add(this.btnAddDinuguan);
+            this.Controls.Add(this.btnAddSinigang);
+            this.Controls.Add(this.btnAddAdobo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDowndiniguan);
+            this.Controls.Add(this.numericUpDownsinigang);
+            this.Controls.Add(this.numericUpDownadobo);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cart";
             this.Text = "Cart";
             this.Load += new System.EventHandler(this.Cart_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDowndiniguan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownsinigang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownadobo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,17 +380,17 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDowndiniguan;
+        private System.Windows.Forms.NumericUpDown numericUpDownsinigang;
+        private System.Windows.Forms.NumericUpDown numericUpDownadobo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.RadioButton radiobtncredit;
+        private System.Windows.Forms.RadioButton radioBtngcash;
+        private System.Windows.Forms.RadioButton radioBtncash;
+        private System.Windows.Forms.Button btncheck;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnaccnt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnfood;
@@ -351,5 +399,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Button btnAddAdobo;
+        private System.Windows.Forms.Button btnAddSinigang;
+        private System.Windows.Forms.Button btnAddDinuguan;
     }
 }
